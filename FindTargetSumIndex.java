@@ -23,6 +23,10 @@ class FindTargetSumIndex {
            else if(nums[high] >= target){
                high--;
            }
+           else{
+            low++;
+            high--;
+           }
         }
         return result;
     }
